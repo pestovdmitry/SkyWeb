@@ -18,7 +18,8 @@
                 padding: 15px;
             }
             table {
-                border-spacing: 0px;
+              border-spacing: 0px;
+              margin-bottom: 20px;
             }
             th {
                 padding: 10px;
