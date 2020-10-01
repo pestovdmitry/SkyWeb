@@ -75,6 +75,7 @@
                 align-items: center;
             }
             button{
+                display: none;
                 padding: 10px;
                 font-size: 15px;
                 margin: 0 auto;
@@ -176,10 +177,11 @@
     </body>
     <script type="text/javascript">
         let order = [];
-        $('td').on("click", function(){
+        $("td").on("click", function(){
             var d = parseInt($(this).html());
             var index = $.inArray(d, order);
             if(!$(this).hasClass('close') && !$(this).hasClass('order')){
+                $("#ajax").css({"display" : "block"});
                 $(this).addClass('order');
                 order.push(d);
             } else {
